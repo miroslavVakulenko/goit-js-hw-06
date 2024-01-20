@@ -14,16 +14,16 @@ class StringBuilder {
     this.#value = someValue;
   }
   getValue() {
-    return (this.#value = this.#value);
+    return this.#value;
   }
   padEnd(str) {
-    return (this.#value = this.#value + str);
+    this.#value = this.#value + str;
   }
   padStart(str) {
-    return (this.#value = str + this.#value);
+    this.#value = str + this.#value;
   }
   padBoth(str) {
-    return (this.#value = str + this.#value + str);
+    this.#value = str + this.#value + str;
   }
 }
 
